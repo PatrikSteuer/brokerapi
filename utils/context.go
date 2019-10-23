@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"code.cloudfoundry.org/lager"
-	"github.com/pivotal-cf/brokerapi/domain"
+	"github.com/pivotal-cf/brokerapi/v6/domain"
 )
 
 type contextKey string

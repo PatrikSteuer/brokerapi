@@ -5,8 +5,8 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/brokerapi/domain"
-	"github.com/pivotal-cf/brokerapi/utils"
+	"github.com/pivotal-cf/brokerapi/v6/domain"
+	"github.com/pivotal-cf/brokerapi/v6/utils"
 )
 
 var _ = Describe("Context", func() {

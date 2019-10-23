@@ -5,7 +5,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/pivotal-cf/brokerapi/domain"
+	brokerapi "github.com/pivotal-cf/brokerapi/v6"
+	"github.com/pivotal-cf/brokerapi/v6/domain"
 )
 
 type AutoFakeServiceBroker struct {
@@ -865,4 +866,4 @@ func (fake *AutoFakeServiceBroker) recordInvocation(key string, args []interface
 	fake.invocations[key] = append(fake.invocations[key], args)
 }
 
-var _ domain.ServiceBroker = new(AutoFakeServiceBroker)
+var _ brokerapi.ServiceBroker = new(AutoFakeServiceBroker)
